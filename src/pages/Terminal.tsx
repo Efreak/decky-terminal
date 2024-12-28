@@ -381,7 +381,9 @@ const Terminal: VFC = () => {
               <div style={{ display: 'flex', justifyContent: 'center', gap: '.5rem'}}>
                 <IconDialogButton onClick={() => wsRef.current?.send('\x03')}>^C</IconDialogButton>
                 <IconDialogButton onClick={() => wsRef.current?.send('\x04')}>^D</IconDialogButton>
+                <IconDialogButton onClick={() => wsRef.current?.send('\x0f')}>^O</IconDialogButton>
                 <IconDialogButton onClick={() => wsRef.current?.send('\x12')}>^R</IconDialogButton>
+                <IconDialogButton onClick={() => wsRef.current?.send('\x18')}>^X</IconDialogButton>
                 <IconDialogButton onClick={() => wsRef.current?.send('\x1a')}>^Z</IconDialogButton>
               </div>
             </Focusable>
